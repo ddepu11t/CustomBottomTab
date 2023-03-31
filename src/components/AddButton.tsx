@@ -1,7 +1,6 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import { Animated, Image, Pressable, StyleSheet, View } from "react-native";
 import { COLORS } from "../theme";
-import { transform } from "typescript";
 
 type Props = {
   opened: boolean;
@@ -128,6 +127,12 @@ const AddButton: FC<Props> = ({ opened, toogleMenu }) => {
                     rotate: animation.interpolate({
                       inputRange: [0, 1],
                       outputRange: ["0deg", "45deg"],
+                    }),
+                  },
+                  {
+                    scale: animation.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: [1, 1.1],
                     }),
                   },
                 ],
