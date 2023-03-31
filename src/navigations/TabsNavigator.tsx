@@ -16,6 +16,8 @@ const getIconColor = (focused) => ({
   tintColor: focused ? COLORS.primary : COLORS.dark,
 });
 
+const TabComponent = () => <View />;
+
 const TabsNavigator = () => {
   const { opened, toogleMenu } = useTabMenu();
 
@@ -69,7 +71,7 @@ const TabsNavigator = () => {
 
       <Tab.Screen
         name="Add"
-        component={HomeScreen}
+        component={TabComponent}
         options={{
           tabBarItemStyle: {
             height: 0,
