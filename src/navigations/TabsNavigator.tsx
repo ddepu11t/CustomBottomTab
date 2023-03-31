@@ -27,6 +27,7 @@ const TabsNavigator = () => {
         tabBarShowLabel: false,
         tabBarStyle: styles.tabBar,
       }}
+      screenListeners={{ tabPress: (e) => opened && e.preventDefault() }}
     >
       <Tab.Screen
         name="Home"
