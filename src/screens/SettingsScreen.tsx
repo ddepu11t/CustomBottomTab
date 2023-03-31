@@ -1,12 +1,15 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { COLORS } from "../theme";
+import TabContainer from "../components/TabContainer";
 
 const SettingsScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Settings Screen</Text>
-    </View>
+    <TabContainer>
+      <View style={styles.container}>
+        <Text style={styles.text}>Settings Screen</Text>
+      </View>
+    </TabContainer>
   );
 };
 
